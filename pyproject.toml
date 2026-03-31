@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "anton"
+name = "andon"
 version = "0.1.0"
-description = "Anton - Commercialization Process Management System for New Product Introductions"
+description = "Andon - Real-time alert and escalation system for new product commercialization"
 requires-python = ">=3.10"
 dependencies = [
     "typer>=0.12.0",
@@ -13,10 +13,10 @@ dependencies = [
 ]
 
 [project.scripts]
-anton = "anton.cli:app"
+andon = "andon.cli:app"
 
 [tool.hatch.build.targets.wheel]
-packages = ["anton"]
+packages = ["andon"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
